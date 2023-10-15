@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Icons Links -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/simple-line-icons.css" />
+
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Note App</title>
+  </head>
+  <body>
+    <header class="header flex align-center space-between">
+      <div class="logo flex align-center justify-center gap-10">
+        <img src="assets/logo.png" alt="logo" width="30" height="30" />
+        <h3>Note App</h3>
+      </div>
+
+      <div class="flex align-center gap-20">
+        <div class="count">
+          <p>count: <span>2</span></p>
+        </div>
+        <button
+          class="btn flex align-center justify-center gap-10"
+          id="newNote"
+        >
+          <i class="icon-plus"></i>
+          <span>add</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Start Content Section -->
+    <section class="content">
+      <div class="container flex align-center gap-10">
+        <!-- <div class="note-box">
+          <div class="note-date">
+            <p><span>10-10-2023</span> 02:03AM</p>
+          </div>
+
+          <div class="note-content-details">
+            <div class="note-title">
+              <h4>Note Title</h4>
+            </div>
+
+            <div class="note-desc-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                ullam illum quibusdam placeat perspiciatis inventore aspernatur
+                voluptate repudiandae explicabo optio. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Amet ullam illum quibusdam
+                placeat perspiciatis inventore aspernatur voluptate repudiandae
+                explicabo optio.
+              </p>
+            </div>
+          </div>
+
+          <div class="note-ctrl flex align-center gap-20">
+            <div class="edit flex align-center justify-center gap-5">
+              <i class="icon-pencil"></i>
+              <p>edit</p>
+            </div>
+
+            <div class="delete flex align-center justify-center gap-5">
+              <i class="icon-trash"></i>
+              <p>delete</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- End Container Section -->
+
+    <!-- Start Form Section -->
+    <section class="form">
+      <div class="form-container flex align-center justify-center">
+        <i class="icon-close closeIcon"></i>
+        <form class="add-form">
+          <h3>add new note</h3>
+          <div class="input-group">
+            <label for="title">title</label>
+            <input type="text" id="title" placeholder="title" />
+          </div>
+          <div class="input-group">
+            <label for="content">content</label>
+            <textarea
+              name="content"
+              id="content"
+              placeholder="content"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="btn" id="formAddBtn">Add</button>
+        </form>
+
+        <form class="edit-form">
+          <h3>Edit note</h3>
+          <div class="input-group">
+            <label for="editTitle">title</label>
+            <input type="text" id="editTitle" placeholder="title" />
+          </div>
+          <div class="input-group">
+            <label for="editContent">content</label>
+            <textarea
+              name="content"
+              id="editContent"
+              placeholder="content"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="btn" id="formEditBtn">Edit</button>
+        </form>
+      </div>
+    </section>
+    <!-- End Form Section -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
